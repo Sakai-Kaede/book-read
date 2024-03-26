@@ -1,11 +1,15 @@
-interface StoryProps {
-  story: string,
+import '../css/Story.css'
+
+type Props = {
+  pageNum: number;
 }
 
-const Story = (props: StoryProps) => {
+const Story = ({pageNum}: Props) => {
+  const story:string[] = ["111","222","333","444"]
+
   return (
     <section className="area">
-      <p className="story">{props.story}</p>
+      <p className="story">{story[pageNum - 1]}</p>
     </section>
   );
 };
