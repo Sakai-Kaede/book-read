@@ -1,0 +1,21 @@
+.story {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 3rem;
+  
+  /* はみ出した文章の改行 */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  white-space: pre-wrap;
+
+  /* 縦書き中央揃え */
+  -webkit-writing-mode: vertical-rl;
+  -moz-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  -ms-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+
+  /* 英数字を縦方向に表示 */
+  text-orientation: upright;
+}
