@@ -1,0 +1,54 @@
+.image-container {
+  position: relative;
+  display: inline-block;
+  width: 300px;
+  height: 500px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.BookImage {
+  width: auto;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+}
+
+.BookCover:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: linear-gradient(90deg, #fff0, #ffffff23 70%, #ffffff92 95%, #55555544 98%, #a3a3a3c2);
+  border-radius: 5px;
+  z-index: 4;
+}
+
+.BookText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  z-index: 3;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+.BookLabel{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0%, -50%);
+  text-align: center;
+  width        : 300px;
+  height       : 60px;
+  background-color: rgb(60, 127, 65);
+  z-index: 2;
+}
