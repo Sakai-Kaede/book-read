@@ -1,0 +1,12 @@
+.TableContents {
+  height: 100%;
+  width: 250px;
+}
+
+.row {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
