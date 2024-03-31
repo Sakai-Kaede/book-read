@@ -10,8 +10,8 @@ const TableContents = ({ handleValueChange }: Props) => {
     <div className="TableContents">
       <ul>
         {TableContentsData.map((value, key) => (
-          <li>
-            <button key={key} className="row" onClick={() => {handleValueChange(value.pageNum);}}>
+          <li key={key}>
+            <button  className="row" onClick={() => {handleValueChange(value.pageNum);}}>
               {value.title}
             </button>
           </li>
