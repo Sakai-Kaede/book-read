@@ -1,3 +1,5 @@
+import '../css/MoveButton.css'
+
 type Props = {
   pageNum: number;
   handleValueChange: (pageNum: number) => void;
@@ -15,8 +17,10 @@ const MoveButton = ({ pageNum,handleValueChange }: Props) => {
   
   return (
     <>
-      <button onClick={moveForward}>⇦</button>
-      <button onClick={moveBackward}>⇨</button>
+      <div className="MoveButton">
+        <button className="moveForward" onClick={moveForward}>⇦</button>
+        <button className="moveBackward" onClick={moveBackward}>⇨</button>
+      </div>
     </>
   );
 };
