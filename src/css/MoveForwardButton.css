@@ -1,4 +1,14 @@
 .moveForward {
   width: 20%;
   height: 100vh;
+  opacity: 0.2;
+  transition: all 0.5s;
+}
+
+.moveForward:hover {
+  opacity: 0.8;
+}
+
+span {
+  font-size: calc(2vw + 1rem);
 }
