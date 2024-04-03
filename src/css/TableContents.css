@@ -7,11 +7,11 @@ nav {
   left: -300px;
   bottom: 0;
   transition: all 0.5s;
-  z-index: 1;
+  z-index: 2;
   opacity: 0;
 }
 
-.open {
+.open nav {
   left: 0;
   opacity: 1;
 }
@@ -27,6 +27,7 @@ nav {
 }
 
 .button {
+  margin-left: 22px;
   border: none;
   border-bottom: 1px solid #333;
   background-color: #ffffff;
@@ -48,7 +49,7 @@ nav {
   right: 30px;
   width: 30px;
   height: 30px;
-  z-index: 2;
+  z-index: 4;
   cursor: pointer;
 }
 
@@ -64,16 +65,55 @@ nav {
   border-radius: 4px;
 }
 
-.toggle-btn span:nth-child(1){
+.toggle-btn span:nth-child(1) {
   top: 4px;
 }
 
-.toggle-btn span:nth-child(2){
+.toggle-btn span:nth-child(2) {
   top: 14px;
 }
 
-.toggle-btn span:nth-child(3){
+.toggle-btn span:nth-child(3) {
   bottom: 4px;
 }
 
+.open .toggle-btn span:nth-child(1) {
+  transform: translateY(10px) rotate(-315deg);
+}
 
+.open .toggle-btn span:nth-child(2) {
+  opacity: 0;
+}
+
+.open .toggle-btn span:nth-child(3) {
+  transform: translateY(-10px) rotate(315deg);
+}
+
+.toggle-btn-background {
+  position: fixed;
+  top: 25px;
+  left: 25px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  z-index: 3;
+  background-color: #ffffff;
+}
+
+.mask{
+  display: none;
+  transition: all 0.5s;
+}
+
+.open .mask {
+  display: block;
+  background: #000;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  opacity: 0.4;
+  z-index: 1;
+  cursor: pointer;
+}
