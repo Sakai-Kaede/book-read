@@ -13,7 +13,9 @@ const MoveBackwardButton = ({ pageNum,handleValueChange }: Props) => {
   }
   
   return (
-    <button className="moveBackward" onClick={moveBackward}>⇨</button>    
+    <button className="moveBackward" onClick={moveBackward}>
+      <span>⇨</span>
+    </button>    
   );
 };
 
