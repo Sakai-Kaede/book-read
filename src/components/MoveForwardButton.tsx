@@ -11,7 +11,9 @@ const MoveForwardButton = ({ pageNum,handleValueChange }: Props) => {
   }
   
   return (
-      <button className="moveForward" onClick={moveForward}>⇦</button> 
+    <button className="moveForward" onClick={moveForward}>
+      <span>⇦</span>
+    </button> 
   );
 };
 
