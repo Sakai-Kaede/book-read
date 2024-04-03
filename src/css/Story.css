@@ -9,7 +9,7 @@
 .area {
   width: 100%;
   height: 90%;
-  background: rgba(0, 0, 0, 0.196);
+  background: rgba(0, 0, 0, 0.75);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,6 +19,7 @@
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: calc(1.5vw + 1.3rem);
+  color: #ffffff;
   
   /* はみ出した文章の改行 */
   overflow-wrap: break-word;
